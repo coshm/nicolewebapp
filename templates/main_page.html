@@ -37,6 +37,12 @@
             <div class="row">
                 This is the third dummy comment.  It's actually quite exciting!
             </div>
+            
+            {% for comment in comments %}
+                <div class="row">
+                    {{ comment }}
+                </div>
+            {% endfor %}
     
             <div class="row">
                 <form action="." method="POST">
